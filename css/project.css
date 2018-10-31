@@ -21,6 +21,8 @@ html{
     /* change this font stack to your own choices */
     line-height: 1.5;
 }
+body div:nth-child(odd){
+    background: #ddd;}
 p{
     display: flex;
     flex-direction: column;
@@ -77,12 +79,11 @@ header > h2{
 nav{
     padding:1rem 2rem;
     /* color: hsl(244, 87%, 25%); */
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
     
-   
-    
-    
+background-color: #aeaeb2;
+        border: solid 1px;    
 }
 nav.mainnav{
     display: flex;
@@ -114,7 +115,8 @@ nav > a:hover{
 main{
     padding:1rem 2rem;
     margin: 1rem;
-    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     
     
 }
@@ -137,11 +139,15 @@ section p img{
 footer{
     padding:1rem 2rem;
     display: flex;
+    
     justify-content:space-around;
     
     border: solid 2px;
     }
 .foot {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
     
 }
 
@@ -153,10 +159,12 @@ footer{
     
 }
 .foot dl{
+    display: flex;
+    flex-direction: column;
     
 }
 .foot dt{
-    
+
 }
 .foot dd{
     
@@ -178,13 +186,14 @@ footer{
     body {
         font-size: 0.8em;
         display: grid;
-    
+    border: dotted 1px;
         
     }
     main{
         display: flex;
         flex-direction: column;
     }
+    
     
     
     .mast {
@@ -199,29 +208,47 @@ footer{
         
         
     }
+    
     .header {
     
 
     }
     
-    
-     /* section p {
-        width: 50%;
-    } */
+    section h1 {
+        background-color: #aeaeb2;
+    }
+    section h2 {
+        background-color: #aeaeb2;
+    }
+     section  {
+        border: solid 1px;
+         
+    }
     section p img {
         width: 100%;
     }
-    nav {
+    nav{
+        background-color: #aeaeb2;
+        border: solid 1px;
         
-        }
-    
-    footer {
-       display: grid;
-        grid-auto-columns: 1fr 1fr;
-    
-       
+        
     }
     
+    
+    
+
+
+    
+
+    footer.foot{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    body div:nth-child(odd){
+        background: #ddd;
+        
+    }
     
     
         
@@ -239,6 +266,7 @@ footer{
     main{
         display: inline-flex;
         flex-direction: column;
+        border: solid 1px;
     }
        
 }
@@ -246,7 +274,21 @@ section p img{
     width: 100%;
     
     
+    
 }
+
+body div:nth-child(odd){
+        background: #ddd;
+        
+    }
+.foot{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.foot dl{
+    display: flex;
+    flex-direction: column;
+
 
 
 
@@ -293,23 +335,33 @@ display: flex;
         background: #ddd;
         
     }
+    .foot dl{
+    display: flex;
+    flex-direction: row;
     
     
-    
-    .foot{
+   /* .foot{
          display: grid;
-    grid-template-columns: 2fr 3fr; 
+    grid-template-rows: 50% 50%; 
         
     }
     
+    
 .foot nav{
+    display: flex;
+    flex-direction: row;
+    } 
     
     
-}
+
+    .comments {
+        border: dotted 2px;
+        margin: 10px 0px 10px;
+    }
     
     
 .foot section{
    width: 50%;
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 50% 50%;}*/
     
