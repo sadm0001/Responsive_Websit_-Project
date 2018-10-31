@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0.2em;
+    margin: 0.1em;
+    box-sizing: border-box;
+    
+    
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: Josefin sans,'Times new roman', sans-serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+}
+p{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: hsl(246, 34%, 25%);
+    
+    
+}
+ul{
+    
+}
+ol{
+    
+}
+li{
+    
+}
+img{
+    width: 25%;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding:1rem 2rem;
+    margin: -0.02rem;
+    color: black;
+    display: grid;
+    grid-template-rows: 150px 100px;
+    
+    
+}
+header > h1{
+    /* color: hsl(244, 87%, 25%); */
+    /* background-color: hsl(246, 34%, 25%); */
+    
+    
+}
+header > h2{
+    /* color: hsl(244, 87%, 25%); */
+    
+    
+    
+}
+
+
+/*************************************************
+            NAVMENU
+*************************************************/
+nav{
+    padding:1rem 2rem;
+    /* color: hsl(244, 87%, 25%); */
+    display: flex;
+    flex-direction: row;
+    
+   
+    
+    
+}
+nav.mainnav{
+    display: flex;
+    justify-content:space-around;
+    background-color: #aeaeb2;
+    border: solid 2px;
+    
+
+}
+nav > a,
+nav > a:visited {
+    
+    /* color: hsl(244, 87%, 25%); */
+}
+}
+nav > a:link{
+    
+    
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+    
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding:1rem 2rem;
+    margin: 1rem;
+    
+    
+    
+}
+section{
+    
+}
+section p{
+    
+    
+}
+section p img{
+    width: 25%;
+    
+    
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    padding:1rem 2rem;
+    display: flex;
+    justify-content:space-around;
+    
+    border: solid 2px;
+    }
+.foot {
+    
+}
+
+
+
+
+.foot section{
+   
+    
+}
+.foot dl{
+    
+}
+.foot dt{
+    
+}
+.foot dd{
+    
+}
+.foot dd a,
+.foot dd a:visited{
+    color: hsl(246, 34%, 25%);
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    
+}
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px){
+    body {
+        font-size: 0.8em;
+        display: grid;
+    
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .mast {
+        width: 100%;
+        background-image: url("/img/download.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+    }
+    .header {
+    
+
+    }
+    
+    
+     /* section p {
+        width: 50%;
+    } */
+    section p img {
+        width: 100%;
+    }
+    nav {
+        
+        }
+    
+    footer {
+       display: grid;
+        grid-auto-columns: 1fr 1fr;
+    
+       
+    }
+    
+    
+    
+        
+}
+
+
+@media (min-width: 600px) and (max-width:999px){
+    .mast {
+        width: 100%;
+                 background-image: url("/img/download.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+          background-size: cover;
+    }
+    main{
+        display: inline-flex;
+        flex-direction: column;
+    }
+       
+}
+section p img{
+    width: 100%;
+    
+    
+}
+
+
+
+
+@media (min-width: 1000px){
+    main {
+        display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-column: span 2;
+    }
+    body {
+        font-size: 1.4em;
+        
+        
+    }
+    
+     .mast {
+        width: 100%;
+                 background-image: url("/img/download.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+          background-size: cover;
+    }
+    
+    
+    
+     section p {
+        width: 100%;
+    }
+    .mainnav {
+display: flex;
+        flex-direction: row;
+        
+    }
+    section p img {
+        width:100%;
+        
+    
+    }
+    
+    body div:nth-child(odd){
+        background: #ddd;
+        
+    }
+    
+    
+    
+    .foot{
+         display: grid;
+    grid-template-columns: 2fr 3fr; 
+        
+    }
+    
+.foot nav{
+    
+    
+}
+    
+    
+.foot section{
+   width: 50%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    
