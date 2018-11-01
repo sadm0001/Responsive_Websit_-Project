@@ -198,12 +198,13 @@ footer{
     
     .mast {
         width: 100%;
-        background-image: url("/img/download.jpg");
+        background-image: url(download.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         display: flex;
         flex-direction: column;
+        
         
         
         
@@ -264,7 +265,7 @@ footer{
 @media (min-width: 600px) and (max-width:999px){
     .mast {
         width: 100%;
-                 background-image: url("/download.jpg");
+                 background-image: url(download.jpg);
         background-repeat: no-repeat;
         background-position: center;
           background-size: cover;
@@ -315,7 +316,7 @@ body div:nth-child(odd){
     
      .mast {
         width: 100%;
-                 background-image: url("/img/download.jpg");
+                 background-image: url(download.jpg);
         background-repeat: no-repeat;
         background-position: center;
           background-size: cover;
