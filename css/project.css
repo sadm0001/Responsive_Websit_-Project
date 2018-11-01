@@ -198,7 +198,7 @@ footer{
     
     .mast {
         width: 100%;
-        background-image: url(download.jpg);
+        
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -211,7 +211,7 @@ footer{
     }
     
     .header {
-    
+    background-image: url(download.jpg);
 
     }
     
@@ -277,6 +277,8 @@ footer{
     }
        
 }
+.header {
+    background-image: url(download.jpg);}
 section p img{
     width: 100%;
     
@@ -313,7 +315,8 @@ body div:nth-child(odd){
         
         
     }
-    
+    .header {
+    background-image: url(download.jpg);}
      .mast {
         width: 100%;
                  background-image: url(download.jpg);
